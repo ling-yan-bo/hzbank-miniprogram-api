@@ -108,6 +108,49 @@ const needPromiseApis = [
 
   // 数据安全
   'rsa',
+
+  // 隐藏标题栏上的“返回首页”图标。
+  'hideBackHome',
+
+  // 获取导航栏背景色。
+  'getTitleColor',
+
+  // select 的组件
+  'optionsSelect',
+
+  // 自定义 onLocatedComplete 函数，可以监听该页面地理位置定位完的回调
+  'onLocatedComplete',
+
+  // 该接口用于修改 my.chooseCity 中的默认定位城市的名称。
+  'setLocatedCity',
+
+  // 态设置窗口的背景色。
+  'setBackgroundColor',
+
+  // 动态设置下拉背景的字体、加载图形的样式。
+  'setBackgroundTextStyle',
+
+  // 设置页面是否支持下拉（小程序内页面默认支持下拉）。
+  'setCanPullDown',
+
+  // 配置 optionMenu 导航栏的额外图标，点击后触发 onOptionMenuClick。
+  'setOptionMenu',
+
+  // 取消监听截屏事件。
+  'offUserCaptureScreen',
+
+  // 移除寻找到新的蓝牙设备事件的监听。
+  'offBluetoothDeviceFound',
+
+  // 移除低功耗蓝牙设备的特征值变化事件的监听。
+  'offBLECharacteristicValueChange',
+
+  // 移除低功耗蓝牙连接状态变化事件的监听。
+  'offBLEConnectionStateChanged',
+
+  // 移除本机蓝牙状态变化的事件的监听。
+  'offBluetoothAdapterStateChange'
+
 ];
 
 export {
