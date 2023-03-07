@@ -19,7 +19,7 @@ if (hasProxy) {
       if (key in target) {
         return target[key];
       } else {
-        console.warn(`支付宝小程序暂不支持 my.${key.toString()}`);
+        console.warn(`mpaas小程序暂不支持 my.${key.toString()}`);
         return target[key];
       }
     }

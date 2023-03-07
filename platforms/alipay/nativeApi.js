@@ -149,8 +149,21 @@ const needPromiseApis = [
   'offBLEConnectionStateChanged',
 
   // 移除本机蓝牙状态变化的事件的监听。
-  'offBluetoothAdapterStateChange'
+  'offBluetoothAdapterStateChange',
 
+  'saveImage',
+
+  'getClipboard',
+
+  'setClipboard',
+
+  'scan',
+
+  'connectBLEDevice',
+
+  'disconnectBLEDevice',
+
+  'onBLEConnectionStateChanged'
 ];
 
 export {

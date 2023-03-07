@@ -184,8 +184,8 @@ const sharedNeedPromiseApis = [
   'getUserInfo',
   'login',
   'checkSession',
-  'navigateBackMiniProgram',  // 百度：navigateBackSmartProgram
-  'navigateToMiniProgram',    // 百度：navigateToSmartProgram
+  'navigateBackMiniProgram',  
+  'navigateToMiniProgram',   
   'getShareInfo',
   'hideShareMenu',
   'showShareMenu',

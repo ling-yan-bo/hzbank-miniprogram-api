@@ -1,7 +1,6 @@
 {
-  "name": "hzbank-api-master",
-  "version": "1.0.1",
-  "description": "",
+  "name": "hzbank-api",
+  "version": "1.0.0",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,10 +9,12 @@
     "type": "git",
     "url": "git+https://github.com/ling-yan-bo/hzbank-miniprogram-api.git"
   },
-  "author": "",
+  "author": "ling",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ling-yan-bo/hzbank-miniprogram-api/issues"
   },
-  "homepage": "https://github.com/ling-yan-bo/hzbank-miniprogram-api#readme"
+  "homepage": "https://github.com/ling-yan-bo/hzbank-miniprogram-api#readme",
+  "keywords": [],
+  "description": ""
 }

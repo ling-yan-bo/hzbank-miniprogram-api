@@ -50,7 +50,7 @@ function processApis(megalo) {
         }
 
         if (!(aliasKey in my)) {
-          console.warn(`支付宝小程序暂不支持 my.${aliasKey}`);
+          console.warn(`mpaas小程序暂不支持 my.${aliasKey}`);
           return; 
         }
 
@@ -127,7 +127,7 @@ function processApis(megalo) {
         let aliasKey = result.rawApi;
 
         if (!(aliasKey in my)) {
-          console.warn(`支付宝小程序暂不支持 my.${aliasKey}`);
+          console.warn(`mpaas小程序暂不支持 my.${aliasKey}`);
           return;
         }
         if (aliasKey === 'getStorageSync') {
