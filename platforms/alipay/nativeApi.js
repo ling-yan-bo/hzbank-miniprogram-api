@@ -163,10 +163,396 @@ const needPromiseApis = [
 
   'disconnectBLEDevice',
 
-  'onBLEConnectionStateChanged'
+  'onBLEConnectionStateChanged',
+  
+  'env',
+
+  'getLaunchOptionsSync',
+
+  'getEnterOptionsSync',
+
+  'getAccountInfoSync',
+
+  'getAppIdSync',
+
+  'base64ToArrayBuffer',
+
+  'arrayBufferToBase64',
+
+  'onAppShow',
+
+  'offAppShow',
+
+  'onAppHide',
+
+  'onPageNotFound',
+
+  'onUnhandledRejection',
+
+  'offUnhandledRejection',
+
+  'onError',
+
+  'offError',
+
+  'onComponentError',
+
+  'offComponentError',
+
+  'onLazyLoadError',
+
+  'offLazyLoadError',
+
+  'enableAlertBeforeUnload',
+
+  'disableAlertBeforeUnload',
+
+  'chooseAlipayContact',
+
+  'chooseContact',
+
+  'chooseDistrict',
+
+  'regionPicker',
+  
+  'offLocatedComplete',
+
+  'getMapInfo',
+
+  'createMapContext',
+
+  'calculateRoute',
+
+  'createIntersectionObserver',
+
+  'loadFontFace',
+
+  'getMenuButtonBoundingClientRect',
+
+  'exitMiniProgram',
+
+  'ap.navigateToAlipayPage',
+
+  'ap.openAlipayApp',
+
+  'ap.openURL',
+
+  'saveImageToPhotosAlbum',
+
+  'generateImageFromCode',
+
+  'chooseVideo',
+
+  'saveVideoToPhotosAlbum',
+
+  'createVideoContext',
+
+  'createInnerAudioContext',
+
+  'getBackgroundAudioManager',
+
+  'getAvailableAudioSources',
+
+  'onAudioInterruptionBegin',
+
+  'offAudioInterruptionBegin',
+
+  'offAudioInterruptionEnd',
+
+  'onAudioInterruptionEnd',
+
+  'getRecorderManager',
+
+  'createLottieContext',
+
+  'createLottieContext',
+
+  'createCameraContext',
+
+  'getBackgroundFetchData',
+
+  'openDocument',
+
+  'getFileSystemManager',
+
+  'getMainSelectedCity',
+
+  'setVisualEffectOnCapture',
+
+  'startAccelerometer',
+
+  'stopAccelerometer',
+
+  'startGyroscope',
+
+  'stopGyroscope',
+
+  'startCompass',
+
+  'stopCompass',
+
+  'onDeviceMotionChange',
+
+  'offDeviceMotionChange',
+
+  'getServerTime',
+
+  'openSetting',
+
+  'getSetting',
+
+  'isScreenReaderEnabled',
+
+  'showAuthGuide',
+
+  'onMemoryWarning',
+
+  'offMemoryWarning',
+
+  'getBatteryInfo',
+
+  'getBatteryInfoSync',
+
+  'setBLEMTU',
+
+  'getBLEMTU',
+
+  'getBLEDeviceRSS',
+
+  'getBLEDeviceStatus',
+
+  'showBLEPermissionGuide',
+
+  'startBluetoothDevicesDiscovery',
+
+  'makeBluetoothPair',
+
+  'getBluetoothPairs',
+
+  'cancelBluetoothPair',
+
+  'getBeacons',
+
+  'startBeaconDiscovery',
+
+  'stopBeaconDiscovery',
+
+  'onBeaconUpdate',
+
+  'offBeaconUpdate',
+
+  'onBeaconServiceChange',
+
+  'offBeaconServiceChange',
+
+  'getWifiList',
+
+  'setWifiList',
+
+  'onWifiConnected',
+
+  'offWifiConnected',
+
+  'onGetWifiList',
+
+  'offGetWifiList',
+
+  'getConnectedWifi',
+
+  'registerSSID',
+
+  'unregisterSSID',
+
+  'startWifi',
+
+  'stopWifi',
+
+  'connectWif',
+
+  'createWorker',
+
+  'showSharePane',
+
+  'hideAddToDesktopMenu',
+
+  'hideAllAddToDesktopMenu',
+
+  'getUpdateManager',
+
+  'ap.updateAlipayClient',
+
+  'tradePay',
+
+  'getAuthCode',
+
+  'getAuthCode',
+
+  'getOpenUserInfo',
+
+  'getAddress',
+
+  'getPhoneNumber',
+
+  'getRunData',
+
+  'paySignCenter',
+
+  'openCardList',
+
+  'openMerchantCardList',
+
+  'openCardDetail',
+
+  'requestSubscribeMessage',
+
+  'getExtConfig',
+
+  'getExtConfigSync',
+
+  'openVoucherList',
+
+  'openMerchantVoucherList',
+
+  'openVoucherDetail',
+
+  'openKBVoucherDetail',
+
+  'openTicketList',
+
+  'openMerchantTicketList',
+
+  'openTicketDetail',
+
+  'openTicketList',
+
+  'openMerchantTicketList',
+
+  'openTicketDetail',
+
+  'checkIsIfaaEnrolledInDevice',
+
+  'checkIsSupportIfaaAuthentication',
+
+  'startIfaaAuthentication'
+
+
 ];
+
+// JSApi调用方式
+const JSApis = [
+  'call',
+  'callSync'
+]
+
+// 客户端自定义api
+const clientCustomizationApis = [
+  // 密码键盘
+  'showKeyBoard',
+  'showdigitpad',
+  'getFaceRecognition',
+  'getClientLoginInfo',
+  'sendAjaxRequest',
+  'updateTitleInfo',
+  'goBack',
+  'setWaitPanel',
+  'clearWaitPanel',
+  'goPage',
+  'goIndex',
+  'openThirdUrl',
+  'showConfirm',
+  'setData',
+  'getData',
+  'getDatas',
+  'savePersistentData',
+  'getPersistentData',
+  'saTrack',
+  'loginOutSimplify',
+  'hidePwdKeyboard',
+  'hideSoftKeyBoard',
+  'getPswdRandom',
+  'getClientSize',
+  'getAppCurrentVersion',
+  'getAppStartInfo',
+  'clearSignInfo',
+  'setSignInfo',
+  'getSignInfo',
+  'showAlert',
+  'showToast',
+  'getLastUserAlias',
+  'getSupportType',
+  'takeCardIdPhoto',
+  'recBankCard',
+  'compPwd',
+  'gotoTargetMenu',
+  'checkSelfPermission',
+  'getDeviceInfo',
+  'getDeviceTokena',
+  'getDeviceId',
+  'bindDevice',
+  'deactivateDevice',
+  'isDeviceBinded',
+  'getDeviceTokenaByOnce',
+  'bindDeviceByOnce',
+  'setStatusBarFontColor',
+  'getClipboard',
+  'openLoginDialog',
+  'closeLoginDialog',
+  'sendWXAuth',
+  'openFingerPrint',
+  'updateAppStartInfo',
+  'getAjaxEnvConfig',
+  'getClientMobileInfo',
+  'setClipboard',
+  'mapIsInstalled',
+  'hasFunction',
+  'baiduMapToGooleMap',
+  'scanFunction',
+  'getLocationInfo',
+  'getJTSupportNFC',
+  'openEidlinkNfc',
+  'closeEidlinkNfc',
+  'openGesture',
+  'closeGesture',
+  'resetGesture',
+  'showBottomAlert',
+  'homeSecondFloor',
+  'backHomeSecondFloor',
+  'unionpayBindUser',
+  'unionpayScanCode',
+  'unionpayUnbindUser',
+  'unionpayStartQrPay',
+  'unionpayForSnNotify',
+  'unionpayProtocol',
+  'initSimCardToken',
+  'getSimCardToken',
+  'getLoginToken',
+  'updateMac',
+  'setClientSkin',
+  'saveImage',
+  'bySearchOpen',
+  'openAppStore',
+  'openBrowser',
+  'setAppHomeType',
+  'getAppHomeType',
+  'hideLoading',
+  'shareWebUrl',
+  'shareMiniProgram',
+  'openMiniProgram',
+  'subscribeWXMessage',
+  'openSysContact',
+  'setAppBadgeNumber',
+  'getAllContactInfos',
+  'callPhone',
+  'openHZbankApplet',
+  'openAppletScan',
+  'initUkey',
+  'startSignature',
+  'changePINpwd',
+]
 
 export {
   noPromiseApis,
   needPromiseApis,
+  JSApis,
+  clientCustomizationApis
 };

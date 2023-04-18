@@ -8,6 +8,8 @@ import {
 import {
   noPromiseApis,
   needPromiseApis,
+  JSApis,
+  clientCustomizationApis
 } from './nativeApi';
 
 import {
@@ -27,6 +29,8 @@ function processApis(megalo) {
     sharedNeedPromiseApis,
     noPromiseApis,
     needPromiseApis,
+    JSApis,
+    clientCustomizationApis
   );
 
   myApis.forEach(key => {
@@ -117,7 +121,6 @@ function processApis(megalo) {
             };
           });
         }
-
         return p;
       };
     } else {
@@ -177,9 +180,22 @@ function processApis(megalo) {
             });
           }
         }
-        console.log("args", args)
+
         return my[aliasKey].apply(my, args);
       };
+    }
+    if (JSApis.indexOf(key) !== -1) {
+      megalo[key] = (...args) => {
+        const result = adaptApi(key, {}, needPromiseApiDiffs);
+        let aliasKey = result.rawApi;
+        return my[aliasKey].apply(my, args);
+        
+      }
+    }
+    if (clientCustomizationApis.indexOf(key) !== -1) {
+      megalo[key] = (...args) => {
+        return my.call(key, ...args)
+      }
     }
   });
 }
