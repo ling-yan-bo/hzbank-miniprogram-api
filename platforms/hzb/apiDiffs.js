@@ -301,10 +301,22 @@ import { buf2hex } from '../shared';
 //   }
 // };
 
+const clientCommonApisDiffs = {
+  'hzAlert': {
+    alias: 'showAlert',
+  },
+  'HzKeyBoard': {
+    alias: 'showKeyBoard'
+  },
+  'HzUserInfo': {
+    alias: 'getSignInfo'
+  }
+}
 
 const needPromiseApiDiffs = {}
 const noPromiseApiDiffs = {}
 export {
+  clientCommonApisDiffs,
   needPromiseApiDiffs,
   noPromiseApiDiffs,
 };

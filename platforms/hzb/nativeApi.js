@@ -446,7 +446,7 @@ const JSApis = [
 
 // 客户端自定义api
 const clientCustomizationApis = [
-  // 密码键盘
+  // 手机银行
   'showKeyBoard',
   'showdigitpad',
   'getFaceRecognition',
@@ -548,7 +548,7 @@ const clientCustomizationApis = [
   'initUkey',
   'startSignature',
   'changePINpwd',
-  
+
   // 直销银行
 
   // 获取用户信息
@@ -597,9 +597,17 @@ const clientCustomizationApis = [
   'startApp'
 ]
 
+// 通用客户端方法
+const clientCommonApis = [
+    'hzAlert',
+    'HzKeyBoard',
+    'HzUserInfo'
+]
+
 export {
   noPromiseApis,
   needPromiseApis,
   JSApis,
-  clientCustomizationApis
+  clientCustomizationApis,
+  clientCommonApis
 };
