@@ -433,8 +433,11 @@ const needPromiseApis = [
 
   'checkIsSupportIfaaAuthentication',
 
-  'startIfaaAuthentication'
+  'startIfaaAuthentication',
+  
+  'on',
 
+  'off',
 
 ];
 
